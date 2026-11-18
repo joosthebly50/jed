@@ -12,9 +12,9 @@ My name is Joost Hebly. I am writing to provide supplementary information regard
 
 I have organized the material relating to my Jed Boards complaint into a public evidence dossier:
 
-**Interactive evidence dossier:** https://joosthebly50.github.io/jed-boards-public-dossier/
+**Interactive evidence dossier:** https://joosthebly50.github.io/jed/
 
-**GitHub repository:** https://github.com/joosthebly50/jed-boards-public-dossier
+**GitHub repository:** https://github.com/joosthebly50/jed
 
 The dossier contains a chronology and source material concerning my May 2018 purchase from Jed Boards Pte Ltd, the payments and later delivery and refund correspondence, my prior reports to authorities, and newer records obtained in 2026. It also includes the correspondence I received from the Hong Kong Police in 2021.
 

@@ -31,6 +31,10 @@
 |---|---|---|---|
 | **23 Nov 2026** | Original report `PL2600-210412-160037300`; new contact-form confirmation `261123-PS177808741` | A written request was submitted to the Dutch National Police for a complete copy of the original report and attachments, archive retrieval, case-status information, reassessment/reopening based on additional evidence, cooperation with Australian police and other authorities, lawful verification of address information, international information exchange, possible lawful retrieval of relevant ICS payment information, and written correspondence. | **Written request submitted — awaiting substantive response.** The confirmation “Het formulier is verzonden” establishes submission only; it does not establish reopening or investigative action. Supporting screenshot: [Dutch police submission confirmation](SCREENSHOTS/Dutch_Police_2026-11-23_Submission_Confirmation.png). |
 
+### Public summary of the submitted Dutch police update (not verbatim)
+
+The exact submitted form text was not found in the local project files. The following is a factual summary of the documented request: obtain the original Dutch police report and archived attachments; address earlier unsuccessful telephone contacts and police-station visits; request reassessment or reopening based on additional evidence; provide the ACRA corporate records and related complaint; reference Australian ReportCyber (`CIRS-20261110-12`), NSW Police and Randwick Police Station; explain identifying information discovered through corporate records; reference Singapore Police Force (`A/20210414/0016`) and Hong Kong Police (`LM 311/21`, `WCH 73/12`); ask whether Dutch police can lawfully obtain relevant ICS payment information, including through contact with Duncan Macdonald, Team Manager Chargeback; request international police cooperation, particularly with Australia; and request written correspondence and a substantive response. This summary is not an official police decision and does not establish reopening.
+
 ## Case timeline — Australian Police / ReportCyber
 
 | Date | Authority / reference | Confirmed event | Evidence status |

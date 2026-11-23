@@ -25,11 +25,17 @@
 
 ---
 
+## Case timeline — Australian Police / ReportCyber
+
+| Date | Authority / reference | Confirmed event | Evidence status |
+|---|---|---|---|
+| **23 Nov 2026, 13:15 (time zone not established)** | Australian Police follow-up; related ReportCyber reference `CIRS-20261110-12` | A follow-up email was sent regarding the complaint and supporting evidence emailed on 10 November 2026. After 13 days without an acknowledgement, the email requested confirmation of receipt, registration or referral, any assigned police reference/event number, and whether further information is required. The email states that related concerns were also reported in Singapore, Hong Kong and the Netherlands. | Email text supplied; raw message headers and a separate supporting file are not present in this repository. No receipt or police response is established. |
+
 ## Case timeline — Singapore Police Force
 
 | Date | Authority / reference | Confirmed event | Evidence status |
 |---|---|---|---|
-| **23 Nov 2026, 13:31:53 CET** | Singapore Police Force feedback reference `6b0432390b09af848a28eead`; concerning original report `A/20210414/0016` | A formal follow-up complaint was submitted about the lack of communication and progress updates regarding the existing JED Boards / Jeremy Scott Bogan police report. The SPF feedback form displayed **“Compliment Submitted Successfully”**, although the submission was a complaint. This records the submission confirmation only; it does not establish acceptance, investigation, resolution, or that the complaint was upheld. | Submission confirmation reported; screenshot/supporting confirmation not present in this repository (**pending**). |
+| **23 Nov 2026, 13:31:53 CET** | Singapore Police Force feedback reference `6b0432390b09af848a28eead`; concerning original report `A/20210414/0016` | A formal follow-up complaint was submitted about the lack of communication and progress updates regarding the existing JED Boards / Jeremy Scott Bogan police report. The SPF feedback form displayed **“Compliment Submitted Successfully”**, although the submission was a complaint. This records the submission confirmation only; it does not establish acceptance, investigation, resolution, or that the complaint was upheld. | [Submission confirmation screenshot](SCREENSHOTS/SPF_Followup_2026-11-23_Submission_Confirmation.png) shows the response ID and timestamp. |
 
 ## Category A — Complainant Joost Hebly: Original Purchases, Delivery Assurances, Refund Demands & Chargeback Records (2018–2023)
 

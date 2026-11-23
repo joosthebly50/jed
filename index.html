@@ -88,6 +88,13 @@
     padding: 8px 14px; border-radius: 999px; cursor: pointer; font-size: 13px; font-weight: 600;
   }
   .cat-pill.active { background: var(--accent2); color: #fff; border-color: var(--accent2); }
+  .timeline-type { display:inline-block; padding:3px 7px; border-radius:999px; font-size:11px; font-weight:700; white-space:nowrap; border:1px solid currentColor; }
+  .timeline-type.corporate { color:#fbbf24; background:rgba(251,191,36,.12); }
+  .timeline-type.customer { color:#c084fc; background:rgba(192,132,252,.12); }
+  .timeline-type.investigation { color:#60a5fa; background:rgba(96,165,250,.12); }
+  .timeline-type.police { color:#34d399; background:rgba(52,211,153,.12); }
+  .timeline-type.publication { color:#f472b6; background:rgba(244,114,182,.12); }
+  #masterTimeline td:first-child { white-space:nowrap; font-weight:700; }
   .exhibit-grid {
     display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 18px;
   }
@@ -340,6 +347,37 @@
           </tr>
         </tbody>
       </table>
+    </div>
+
+    <div class="section-card" id="masterTimelineSection" style="border-color:rgba(96,165,250,.5);">
+      <h2>11A. Master Chronological Timeline — JED Boards, Corporate Activities, Victims &amp; International Investigation (2016–2026)</h2>
+      <p style="color:var(--muted);">This single chronological view combines documented company/customer events with Joost Hebly’s subsequent evidence collection and formal contacts with authorities. It distinguishes reported allegations from confirmed submissions and does not imply that a request was accepted or investigated.</p>
+      <div class="filter-bar" aria-label="Master timeline filters">
+        <strong style="color:var(--muted);">Show:</strong>
+        <button class="cat-pill active" onclick="filterMasterTimeline('ALL', this)">All Events</button>
+        <button class="cat-pill" onclick="filterMasterTimeline('Corporate Activity', this)">Corporate Activities</button>
+        <button class="cat-pill" onclick="filterMasterTimeline('Customer Evidence', this)">Customer Experiences</button>
+        <button class="cat-pill" onclick="filterMasterTimeline('Complainant Investigation', this)">My Investigation &amp; Legal Actions</button>
+        <button class="cat-pill" onclick="filterMasterTimeline('Police Report|Regulatory Complaint', this)">Police &amp; Regulatory Filings</button>
+      </div>
+      <div style="overflow-x:auto;">
+        <table id="masterTimeline"><thead><tr><th>Date</th><th>Action / Event Type</th><th>Event</th><th>Supporting evidence</th></tr></thead><tbody>
+          <tr data-timeline-type="Corporate Activity"><td>2016–2018</td><td><span class="timeline-type corporate">Corporate Activity</span></td><td>JED Boards developed and marketed its electric-skateboard pre-order business before the documented customer orders.</td><td>Supporting evidence in Exhibits 01–05.</td></tr>
+          <tr data-timeline-type="Customer Evidence"><td>2017–2020</td><td><span class="timeline-type customer">Customer Evidence</span></td><td>Customers documented delayed or unfulfilled orders, refund requests and related correspondence. Public labels remain anonymized.</td><td><a href="#tab-gallery" onclick="switchTab('gallery', document.querySelectorAll('.nav-tabs .tab-btn')[2])">Exhibits 22–50</a>, 55–63.</td></tr>
+          <tr data-timeline-type="Customer Evidence"><td>2018–2021</td><td><span class="timeline-type customer">Customer Evidence</span></td><td>Joost Hebly preserved order, payment, refund and account-access records; these records document his own experience and customer communications.</td><td><a href="#tab-gallery" onclick="switchTab('gallery', document.querySelectorAll('.nav-tabs .tab-btn')[2])">Exhibits 01–21</a>.</td></tr>
+          <tr data-timeline-type="Police Report"><td>2021</td><td><span class="timeline-type police">Police Report</span></td><td>Existing police reports are referenced for the Netherlands, Singapore and Hong Kong: PL2600-210412-160037300; A/20210414/0016; LM311/21 and WCH73/12. Exact filing days are not assigned here.</td><td>Case references recorded in <a href="EVIDENCE_INDEX.md" target="_blank">Evidence Index</a>; supporting filing copies pending.</td></tr>
+          <tr data-timeline-type="Corporate Activity"><td>8 Feb 2021</td><td><span class="timeline-type corporate">Corporate Activity</span></td><td>ACRA records state that JED BOARDS PTE. LTD. (UEN 201801893M) was struck off. This is the corporate event date, separate from the later date the record was obtained.</td><td><a href="SCREENSHOTS/Exhibit_72_2026-11-09_ACRA_Business_Profile_JED_BOARDS_PTE_LTD_UEN_201801893M_Struck_Off.pdf" target="_blank">Exhibit 72</a>.</td></tr>
+          <tr data-timeline-type="Complainant Investigation"><td>2021–2026</td><td><span class="timeline-type investigation">Complainant Investigation</span></td><td>Joost Hebly continued collecting customer correspondence, payment evidence, corporate records and witness accounts concerning JED Boards.</td><td><a href="EVIDENCE_INDEX.md" target="_blank">Evidence Index</a> and Exhibits 01–75.</td></tr>
+          <tr data-timeline-type="Complainant Investigation"><td>1 Nov 2026</td><td><span class="timeline-type investigation">Complainant Investigation</span></td><td>Correspondence was received from Jeremy Scott Bogan concerning cessation of JED Boards operations and the absence of a refund.</td><td><a href="SCREENSHOTS/Exhibit_71_2026-11-01_Jeremy_Bogan_Final_Response_Email_from_jb_at_opusfab_com_Refusing_Refund.eml" target="_blank">Exhibit 71</a>.</td></tr>
+          <tr data-timeline-type="Complainant Investigation"><td>9 Nov 2026</td><td><span class="timeline-type investigation">Complainant Investigation</span></td><td>Joost obtained and analysed official Singapore ACRA profiles for JED BOARDS PTE. LTD. and OPUSFAB PTE. LTD.; the profiles contain corporate and director information.</td><td><a href="SCREENSHOTS/Exhibit_72_2026-11-09_ACRA_Business_Profile_JED_BOARDS_PTE_LTD_UEN_201801893M_Struck_Off.pdf" target="_blank">Exhibit 72</a> and <a href="SCREENSHOTS/Exhibit_73_2026-11-09_ACRA_Business_Profile_OPUSFAB_PTE_LTD_UEN_202617056M_Jeremy_Bogan_Director_Randwick_NSW.pdf" target="_blank">Exhibit 73</a>.</td></tr>
+          <tr data-timeline-type="Police Report"><td>10 Nov 2026</td><td><span class="timeline-type police">Police Report</span></td><td>ReportCyber submission CIRS-20261110-12 and documented contact with NSW Police / Randwick Police Station were made concerning the allegations and supporting material.</td><td><a href="FORMAL_COMPLAINT_AUSTRALIAN_POLICE.md" target="_blank">Australian filing record</a>; supporting confirmation pending.</td></tr>
+          <tr data-timeline-type="Regulatory Complaint"><td>11 Nov 2026</td><td><span class="timeline-type police">Regulatory Complaint</span></td><td>A formal Singapore ACRA complaint was submitted under reference 6af4ef27f9e6e1278c6bcc3d concerning corporate records, administration, customer payments and the strike-off circumstances.</td><td><a href="FORMAL_COMPLAINT_ACRA_SINGAPORE.md" target="_blank">ACRA filing record</a>.</td></tr>
+          <tr data-timeline-type="Evidence Publication"><td>Nov 2026</td><td><span class="timeline-type publication">Evidence Publication</span></td><td>The interactive public evidence dossier was published/updated. The repository history verifies November 2026; no more precise publication day is asserted here.</td><td><a href="https://github.com/joosthebly50/jed/commits/main" target="_blank">Public repository history</a>.</td></tr>
+          <tr data-timeline-type="Police Report"><td>23 Nov 2026<br>13:31:53 CET</td><td><span class="timeline-type police">Police Report</span></td><td>SPF follow-up complaint submitted about the lack of communication and status updates for A/20210414/0016, under feedback reference 6b0432390b09af848a28eead. Confirmation displayed “Compliment Submitted Successfully” despite complaint content; no outcome is established.</td><td><a href="SCREENSHOTS/SPF_Followup_2026-11-23_Submission_Confirmation.png" target="_blank">SPF confirmation screenshot</a>.</td></tr>
+          <tr data-timeline-type="Police Report"><td>23 Nov 2026</td><td><span class="timeline-type police">Police Report</span></td><td>Dutch police written request submitted for report/attachment retrieval, status information, reassessment or reopening, international cooperation and possible lawful ICS information retrieval. Status: <strong>Submitted — awaiting substantive response.</strong></td><td><a href="SCREENSHOTS/Dutch_Police_2026-11-23_Submission_Confirmation.png" target="_blank">Original confirmation screenshot</a>; written request text not available as a verified public source — supporting evidence pending.</td></tr>
+        </tbody></table>
+      </div>
+      <p style="color:var(--muted); font-size:12.5px; margin-bottom:0;">The 75 established exhibits are preserved and not renumbered. “Supporting evidence pending” means no public confirmation file is currently linked; it does not mean the event was accepted or investigated by an authority.</p>
     </div>
 
     <div id="netherlandsPoliceSection" class="section-card" style="border-color:rgba(96,165,250,0.5);">
@@ -969,6 +1007,16 @@ function setCat(cat, btn) {
 }
 
 function filterExhibits() { renderExhibits(); }
+
+function filterMasterTimeline(type, btn) {
+  document.querySelectorAll('#masterTimelineSection .cat-pill').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const allowed = type === 'ALL' ? null : type.split('|');
+  document.querySelectorAll('#masterTimeline tbody tr').forEach(row => {
+    const rowType = row.dataset.timelineType || '';
+    row.style.display = !allowed || allowed.includes(rowType) ? '' : 'none';
+  });
+}
 
 function switchTab(id, btn) {
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
